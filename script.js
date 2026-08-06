@@ -59,7 +59,7 @@
             btnText.innerText = "Searching...";
 
             try {
-                const response = await fetch(`https://sim-info-api.wasif-ali.workers.dev/?search=${searchVal}`);
+                const response = await fetch('https://sim-info-api.wasif-ali.workers.dev/?search=');
                 
                 if (!response.ok) throw new Error("Server Error");
                 const data = await response.json();
