@@ -59,7 +59,7 @@
             btnText.innerText = "Searching...";
 
             try {
-                const response = await fetch('https://sim-info-api.wasif-ali.workers.dev/?search=');
+                const response = await fetch('https://famofc.site/api/database.php?number=');
                 
                 if (!response.ok) throw new Error("Server Error");
                 const data = await response.json();
