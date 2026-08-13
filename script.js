@@ -59,8 +59,8 @@
             btnText.innerText = "Searching...";
 
             try {
-                const response = await fetch('https://famofc.site/api/database.php?number=');
-                
+                const response = await fetch(`https://ftgm-simdb-api.vercel.app?num=${searchVal}`);
+                    
                 if (!response.ok) throw new Error("Server Error");
                 const data = await response.json();
 
